@@ -1,5 +1,3 @@
-
-<!DOCTYPE html>
 <html lang="de">
     <head>
         <title>laser - 405 nothing here</title>
