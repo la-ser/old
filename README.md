@@ -1,3 +1,9 @@
 # laser-inc.github.io
-# <span style="color: red">WARTUNGSARBEITEN</span>
+<style>
+  zoom{
+  zoom:3
+  }
+</style>
+
+# <zoom><span style="color: red">WARTUNGSARBEITEN</span></zoom>
 by laser
