@@ -1,3 +1,3 @@
 # laser-inc.github.io
-# WARTUNGSARBEITEN
+# <span style="color: red">WARTUNGSARBEITEN</span>
 by laser
