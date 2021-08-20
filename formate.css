@@ -56,12 +56,9 @@ header{
   text-align: center;
 }
 
-error{
-  color: rgb(187, 5, 5);
-  margin: 10px;
-  min-width: 10mm;
-  max-height: 100mm;
+h3{
   text-align: center;
+  color: #e71a1a;
 }
 
 
