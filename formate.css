@@ -38,10 +38,10 @@ tr{
 h1{
   margin: 1px;
   text-align: center;
-  background-color: rgb(0 139 117);
+  background-color: rgb(35, 163, 73);
   border-style: double;
   border-radius: 10mm;
-  color: #00ff8a;
+  color: #0ddb2f;
 }
 
 h2{
@@ -50,7 +50,7 @@ h2{
 }
 
 header{
-  color: rgb(5, 175, 187);
+  color: rgb(5, 187, 178);
   min-width: 10mm;
   max-height: 1000mm;
   text-align: center;
