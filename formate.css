@@ -104,3 +104,36 @@ hidetext {
 ::-webkit-scrollbar-thumb:hover {
   background: #00b31e; 
 }
+
+.alert {
+  padding: 20px;
+  background-color: #1d9c32;
+  border-radius: 50px;
+  border-style: outset;
+  color: white;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 27px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.closebtn:hover {
+  color: rgb(128, 123, 123);
+}
+
+alert1{
+  font-style: oblique;
+  color: rgb(14, 243, 6);
+}
+
+alert2{
+  font-style: inherit;
+  color: rgb(27, 223, 109);
+}
