@@ -1,0 +1,177 @@
+body	/* general body */
+{
+  color: #000000;
+	background-color : #FFFFFF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+table.subst,
+table.break,
+th.list,
+td.list,
+th.break,
+td.break
+{
+	background-color: #F4F4F4;
+	border: 1px;
+	border-style: solid;
+	border-color: black;
+	margin: 0px;
+	border-collapse:collapse;
+	padding: 3px;
+}
+
+#vertretung table th.list,
+#vertretung table td.list
+{
+	background-color: none;
+	border: none;
+	border-style: none;
+	border-color: none;
+}
+
+#vertretung {
+  font: small Arial, Helvetica, sans-serif;
+}
+
+#vertretung table {
+  font-size: small;
+}
+
+#vertretung table { color: #000000; width: 600px;}
+#vertretung table th, #vertretung table th.list { background: #000; color: #fff; }
+#vertretung table th, #vertretung table td { padding: 8px 4px; }
+
+#vertretung tr.odd, #vertretung tr.odd td { background: #fad3a6; }
+#vertretung tr.even, #vertretung tr.even td { background: #fdecd9; }
+
+#vertretung a { color: rgb(255, 153, 0); }
+#vertretung a:hover { color: rgb(51, 51, 51); }
+
+body.nav
+{
+	margin-left:0;
+	margin-right:0;
+	margin-top:0;
+    color: #000000;
+	background-color : #EAEAEA;
+}
+
+body.title
+{
+	margin-left:0;
+	margin-right:0;
+	margin-top:0;
+    color: #000000;
+	background-color : #FFFFFF;
+}
+
+body.tt	/* body for timetables */
+{
+    color: #000000;
+	background-color : #FFFFFF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.selection
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+         font-size: 10px;
+         font-style: normal;
+         line-height: normal;
+         font-weight: 900;
+         font-variant: normal;
+         text-transform: none;
+         color: #000000;
+}
+
+.schoolname
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+         font-size: 10px;
+         font-style: normal;
+         line-height: normal;
+         font-weight: 900;
+         font-variant: normal;
+         text-transform: none;
+         color: #000000;
+}
+
+.description
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+         font-size: 9px;
+         font-style: normal;
+         line-height: 12px;
+         font-weight: normal;
+         font-variant: normal;
+         text-transform: none;
+         color: #000000;
+}
+
+.footer
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+         font-size: 9px;
+         font-style: normal;
+         line-height: 12px;
+         font-weight: normal;
+         font-variant: normal;
+         text-transform: none;
+         color: #000000;
+}
+
+.absatz
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+         font-size: 2px;
+         font-style: normal;
+         line-height: normal;
+         font-weight: normal;
+         font-variant: normal;
+         text-transform: none;
+         color: #FFFFFF;
+}
+
+.tabelle
+{
+	vertical-align: top;
+	padding-top: 3px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	background-color : #EAEAEA;
+}
+
+.selectbox
+{
+         width: 120px;
+}
+
+.symbol
+{
+         border-width: 0px;
+         vertical-align: middle;
+}
+
+a:link  {
+	COLOR : #FF8000;
+}
+
+a:active  {
+	COLOR : #33FF00;
+}
+
+a:hover  {
+	COLOR : blue;
+}
+
+a:visited  {
+	COLOR : #FF8000;
+}
+
+
+
+
+
+
