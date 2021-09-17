@@ -85,6 +85,7 @@ hidetext {
 /* width */
 ::-webkit-scrollbar {
   width: 20px;
+  width: fit-content;
 }
 
 /* Track */
