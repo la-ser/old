@@ -12,84 +12,111 @@
   <title>laser Inc. - Mainsite</title>
 </head>
 <zoom>
-<hidetext>
-  <!--Styles / buttons-->
-  <style>
-    #small {
-      size: 0.5;
-    }
-  </style>
+  <hidetext>
+    <!--Styles / buttons-->
+    <style>
+      #small {
+        size: 0.5;
+      }
 
-  <!--<meta http-equiv="refresh" content="1; URL=https://la-ser.github.io/websites/error">-->
-  </head>
-  <!--Main text / buttons / links-->
+      .blue-mode {
+        background-color: rgb(5, 58, 3);
+        color: rgb(28, 128, 3);
+      }
 
-  <body>
-    <header>
-      <h2>
-        <maintext>
-          laser Inc. - Hosting Website
-        </maintext>
-        <div class="alert">
-          
-          <alert1>New!</alert1>
-          <alert2> Discord page! </alert2><br><span class="closebtn"
-            onclick="this.parentElement.style.display='none';">&times;</span><a class="button button1"
-            href="https://la-ser.github.io/websites/discord">klick to go there</a>
-        </div>
-      </h2>
-    </header>
-    <nav>
-      <h1>
-        Navigation
-      </h1>
+      div.sticky {
+        background-color: rgb(255, 0, 0);
+        color: white;
+        position: -webkit-sticky;
+        /* Safari */
+        position: sticky;
+        top: 0;
+      }
+    </style>
 
-      <body>
+    <!--<meta http-equiv="refresh" content="1; URL=https://la-ser.github.io/websites/error">-->
+    </head>
+    <!--Main text / buttons / links-->
 
-        <form>
-          <button class="button button1" formaction="https://la-ser.github.io/websites">Websites</button>
-        </form>
-        <form>
-          <button class="button button2" formaction="https://la-ser.github.io/wartung">WARTUNG</button>
-        </form>
-        <form>
-          <button class="button button1" formaction="https://la-ser.github.io/blocked">Apps</button>
-        </form>
-        <form>
-          <button class="button button1" formaction="https://la-ser.github.io/help">Help</button>
-        </form>
+    <body>
+      <header>
+        <h2>
+          <maintext>
+            laser Inc. - Hosting Website
+          </maintext>
+          <div class="alert">
 
-      </body>
-    </nav>
-    <main>
-      <h1>
-        Startseite
-      </h1>
-      <h2>
-        Weiterführende Links:
-      </h2>
-      <form>
-        <button class="button button1" formaction="https://la-ser.github.io/discord">Discord</button>
-      </form>
-    </main>
-    <aside>
-      <h2>
-        Weitere Inhalte:
-      </h2>
-      <form>
-        <button class="button button1" formaction="https://la-ser.github.io/changelog">Website Version</button>
-      </form>
-    </aside>
-    <footer>
-      <h2>
-        Weitere Informationen:
-      </h2>
-      <a>Diese Website wird von der laser Inc. gehostet und bearbeitet.</a>
+            <alert1>New!</alert1>
+            <alert2> Dark mode! </alert2><br><span class="closebtn"
+              onclick="this.parentElement.style.display='none';">&times;</span><a class="button button1"
+              onclick="myFunction()">klick to toggle</a>
+          </div>
+        </h2>
+      </header>
+      <div class="sticky">!! Wartungsarbeiten werden vorgenommen !!</div>
       <br>
-      <a>Die Website ist aber im Moment noch in der BETA</a>
-    </footer>
-  </body>
-</hidetext>
+      <nav>
+        <h1>
+          Navigation
+        </h1>
+
+        <body>
+
+          <form>
+            <button class="button button1" formaction="https://la-ser.github.io/websites">Websites</button>
+          </form>
+          <form>
+            <button class="button button2" formaction="https://la-ser.github.io/wartung">WARTUNG</button>
+          </form>
+          <form>
+            <button class="button button1" formaction="https://la-ser.github.io/blocked">Apps</button>
+          </form>
+          <form>
+            <button class="button button1" formaction="https://la-ser.github.io/help">Help</button>
+          </form>
+
+        </body>
+      </nav>
+      <main>
+        <h1>
+          Weiteres
+        </h1>
+        <h2>
+          Website Settings
+        </h2>
+        <button class="button button1" onclick="myFunction()">Toggle dark mode</button>
+        <h2>
+          Weiterführende Links:
+        </h2>
+        <form>
+          <button class="button button1" formaction="https://la-ser.github.io/discord">Discord</button>
+        </form>
+      </main>
+      <aside>
+        <h2>
+          Weitere Inhalte:
+        </h2>
+        <form>
+          <button class="button button1" formaction="https://la-ser.github.io/changelog">Website
+            Version</button>
+        </form>
+      </aside>
+      <footer>
+        <h2>
+          Weitere Informationen:
+        </h2>
+        <a>Diese Website wird von der laser Inc. gehostet und bearbeitet.</a>
+        <br>
+        <a>Die Website ist aber im Moment noch in der BETA</a>
+      </footer>
+    </body>
+    <script>
+      function myFunction() {
+        var element = document.body;
+        element.classList.toggle("blue-mode");
+      }
+    </script>
+  </hidetext>
 </zoom>
 <!--Code by laser-->
 
