@@ -38,13 +38,17 @@
         li {
             right: -0.4cm;
             font-size: 25px;
-            width: 8em;
+            width: 9em;
             height: 2em;
-            color: orange;
+            color: rgb(255, 166, 0);
             border-left: 0.08em solid;
             position: relative;
             margin-top: 0.8em;
             cursor: pointer;
+        }
+
+        li:hover {
+            color: rgb(247, 192, 90);
         }
 
         li::before,
@@ -95,16 +99,26 @@
             text-align: center;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             text-transform: uppercase;
+            zoom: 2;
         }
     </style>
 </head>
+
 <body align="center">
     <ul>
-        <h2 class="headtext">Choose Site</h2>
-        <a style="text-decoration: none;" href="https://la-ser.github.io/mainsite"><li><span>mainsite</span></li></a>
-        <a style="text-decoration: none;" href="https://la-ser.github.io/websites"><li><span>websites</span></li></a>
-        <a style="text-decoration: none;" href="https://la-ser.github.io/changelog"><li><span>version</span></li></a>
-        <a style="text-decoration: none;" href="https://la-ser.github.io/credits"><li><span>credits BETA</span></li></a>
+        <a class="headtext">Choose Site</a>
+        <a style="text-decoration: none;" href="https://la-ser.github.io/mainsite">
+            <li><span>mainsite</span></li>
+        </a>
+        <a style="text-decoration: none;" href="https://la-ser.github.io/websites">
+            <li><span>websites</span></li>
+        </a>
+        <a style="text-decoration: none;" href="https://la-ser.github.io/changelog">
+            <li><span>version</span></li>
+        </a>
+        <a style="text-decoration: none;" href="https://la-ser.github.io/credits">
+            <li><span>credits BETA</span></li>
+        </a>
     </ul>
 </body>
 
