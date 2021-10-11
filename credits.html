@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="formate.css">
     <link rel="icon" href="./L.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <title>laser Inc.</title>
+    <title>laser Inc. - Credits</title>
 </head>
 <style>
     body {
@@ -19,8 +19,7 @@
         -ms-user-select: none;
         user-select: none;
         color: white;
-        background-color: rgb(28, 133, 33);
-        background: url(https://la-ser.github.io/bg3.png) no-repeat center center fixed;
+        background: url(https://la-ser.github.io/backgrounds/bg3.png) no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -31,22 +30,22 @@
 
     .filterDiv {
         float: left;
-        background-color: #30a13a;
+        left: 50%;
         color: darkgray;
         width: 100px;
-        line-height: 100px;
+        line-height: 50px;
         text-align: center;
         margin: 4px;
         display: none;
         cursor: pointer;
         border-radius: 10px;
-        background-image: url(https://la-ser.github.io/bg2.png);
+        background-image: url(https://la-ser.github.io/backgrounds/bg2.png);
         background-size: cover;
         opacity: 0.9;
+        padding: 15px 32px;
     }
 
     .filterDiv:hover {
-        background-color: #30a20b;
         color: white;
         transform: scale(1.05);
         opacity: 1;
@@ -58,35 +57,48 @@
     }
 
     .container {
+        text-align: center;
         margin-top: 20px;
         overflow: hidden;
+        margin-left: auto;
     }
 
     .btn {
         border: none;
         outline: none;
         padding: 12px 16px;
-        background-color: #30a13a;
         cursor: pointer;
         color: darkgray;
         border-radius: 10px;
         margin: 2px;
+        padding: 15px 32px;
+        text-align: center;
     }
 
     .btn:hover {
-        background-color: #30a20b;
         color: white;
         transform: scale(1.02);
     }
 
     .btn.active {
-        background-color: rgb(14, 167, 21);
         color: white;
+    }
+
+    .btn2 {
+        border: none;
+        outline: none;
+        padding: 12px 16px;
+        cursor: pointer;
+        color: darkgray;
+        border-radius: 10px;
+        margin: 2px;
+        padding: 15px 32px;
+        text-align: center;
     }
 </style>
 
 <body>
-    <h2>Filter DIV Elements</h2>
+    <h2>Filter DIV Elements BETA-Testing</h2>
 
     <div id="myBtnContainer">
         <button class="btn active" onclick="filterSelection('all')"> Show all</button>
@@ -97,45 +109,7 @@
     </div>
 
     <div class="container">
-        <a href="https://la-ser.github.io" style="text-decoration: none;">
-            <div class="filterDiv mainsite">Mainsite</div>
-        </a>
-        <a href="https://la-ser.github.io/websites" style="text-decoration: none;">
-            <div class="filterDiv website">Website</div>
-        </a>
-        <a href="https://la-ser.github.io/websites/apps" style="text-decoration: none;">
-            <div class="filterDiv mainsite">Apps</div>
-        </a>
-        <a href="https://la-ser.github.io/websites/games" style="text-decoration: none;">
-            <div class="filterDiv website">Games</div>
-        </a>
-        <a href="https://la-ser.github.io/websites/download" style="text-decoration: none;">
-            <div class="filterDiv website">Downloads</div>
-        </a>
-        <a href="https://la-ser.github.io/websites/media-page" style="text-decoration: none;">
-            <div class="filterDiv website">Media</div>
-        </a>
-        <a href="https://la-ser.github.io/help" style="text-decoration: none;">
-            <div class="filterDiv mainsite">Help</div>
-        </a>
-        <a href="https://la-ser.github.io/changelog" style="text-decoration: none;">
-            <div class="filterDiv mainsite">Version</div>
-        </a>
-        <a href="https://la-ser.github.io/discord" style="text-decoration: none;">
-            <div class="filterDiv mainsite">Discord</div>
-        </a>
-        <a href="https://la-ser.github.io/publicbot" style="text-decoration: none;">
-            <div class="filterDiv mainsite">Bot</div>
-        </a>
-        <a href="https://la-ser.github.io/info" style="text-decoration: none;">
-            <div class="filterDiv">Info</div>
-        </a>
-        <a href="https://la-ser.github.io/websites/dev" style="text-decoration: none;">
-            <div class="filterDiv website">BETA</div>
-        </a>
-        <a href="https://la-ser.github.io/credits" style="text-decoration: none;">
-            <div class="filterDiv mainsite">Credits</div>
-        </a>
+        <button class="btn2" style="text-decoration: none;">Mainsite</button>
     </div>
 
     <script>
@@ -198,6 +172,7 @@
         }
     </script>
     <a href="./" class="button button1">back</a>
+    <a href="https://discord.gg/GqHvxm2bR4" class="button button2">Jetzt abstimmen!</a>
 
 </body>
 
