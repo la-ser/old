@@ -62,10 +62,12 @@
         }
 
         .updatename {
+            margin-top: 10px;
             color: rgb(107, 107, 107);
             font-variant: small-caps;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             text-decoration: underline;
+            font-size: xx-large;
         }
 
         edited {
@@ -74,7 +76,8 @@
             font-variant: small-caps;
             border-radius: 3px;
             padding: 7px 25px;
-            margin: 15px 25px;
+            margin: 10px 15px;
+            text-align: center;
         }
 
         added {
@@ -83,7 +86,8 @@
             font-variant: small-caps;
             border-radius: 3px;
             padding: 7px 25px;
-            margin: 15px 25px;
+            margin: 10px 15px;
+            text-align: center;
         }
 
         removed {
@@ -91,8 +95,9 @@
             background-color: rgb(180, 0, 0);
             font-variant: small-caps;
             border-radius: 3px;
-            padding: 7px 25px;
-            margin: 15px 25px;
+            padding: 7px 30px;
+            margin: 10px 15px;
+            text-align: center;
         }
 
         .feature {
@@ -118,12 +123,60 @@
         .features:hover {
             opacity: 1;
         }
+
+        .features2 {
+            word-spacing: 1px;
+            word-wrap: break-word;
+            color: rgb(75, 75, 75);
+            border-radius: 1px;
+            text-shadow: rgb(158, 158, 158) 1.3px 0.7px;
+            user-select: none;
+            opacity: 0.9;
+        }
+
+        .features2:hover {
+            opacity: 1;
+        }
+
+        update {
+            display: flex;
+            flex-direction: column;
+        }
+
+        @media (max-width: 800px) {
+            body {
+                margin-left: 15%;
+            }
+            .feature {
+                font-size: small;
+                margin-left: -20%;
+            }
+            .features {
+                font-size: x-small;
+                margin-left: -90%;
+            }
+            .features2 {
+                font-size: x-small;
+                margin-left: -380%;
+            }
+            .updatename {
+                font-size: large;
+            }
+            .updatedate {
+                font-size: medium;
+                margin-top: 30px;
+            }
+            .back {
+                margin-left: -6px;
+            }
+        }
     </style>
 </head>
 
 <body id="preview">
     <a class="back" href="https://la-ser.github.io">MAINSITE</a>
     <!--
+        <update>
         <h2 class="updatedate">[1.0.0] - 11.10.2021</h2>
     <h3 class="updatename">NewState Update</h3>
     <edited>Edited</edited>
@@ -146,81 +199,86 @@
         <ul>
             <li class="features">beta game</li>
             <ul>
-                <li class="features">youtube page</li>
+                <li class="features2">youtube page</li>
             </ul>
         </ul>
     </ul>
+</update>
     -->
-    <h2 class="updatedate">[1.2.7] - 21.10.2021</h2>
-    <h3 class="updatename">Improvement Update</h3>
-    <edited>Edited</edited>
-    <ul>
-        <li class="feature">Website neugeladen</li>
+    <update>
+        <h2 class="updatedate">[1.2.7] - 21.10.2021</h2>
+        <h3 class="updatename">Improvement Update</h3>
+        <edited>Edited</edited>
         <ul>
-            <li class="features">size fixed ( again )</li>
-            <li class="features">scrollbar edited ( again )</li>
-            <li class="features">audio page</li>
-            <li class="features">main page</li>
-        </ul>
-    </ul>
-    <added>Added</added>
-    <ul>
-        <li class="feature">Seiten hinzugefügt</li>
-        <ul>
-            <li class="features">game ( tetris )</li>
-            <li class="features">test pages [ IMPROVED ]</li>
-        </ul>
-    </ul>
-    <removed>Removed</removed>
-    <ul>
-        <li class="feature">some bugs</li>
-        <li class="feature">Seiten entfernt</li>
-        <ul>
-            <li class="features">old changelog</li>
-            <li class="features">old audio</li>
-        </ul>
-    </ul>
-    <h2 class="updatedate">[1.0.0] - 11.10.2021</h2>
-    <h3 class="updatename">NewState Update</h3>
-    <edited>Edited</edited>
-    <ul>
-        <li class="feature">Website neugeladen</li>
-        <ul>
-            <li class="features">color lime ~ aqua</li>
-            <li class="features">size fixed</li>
-            <li class="features">scrollbar edited</li>
-            <li class="features">darkmode</li>
-        </ul>
-    </ul>
-    <added>Added</added>
-    <ul>
-        <li class="feature">Seiten hinzugefügt</li>
-        <ul>
-            <li class="features">mainsite</li>
-            <li class="features">404 page</li>
-            <li class="features">help page</li>
-            <li class="features">audio page</li>
-            <li class="features">website page</li>
-            <li class="features">game page</li>
-            <li class="features">test pages(credits etc.)</li>
-        </ul>
-    </ul>
-    <removed>Removed</removed>
-    <ul>
-        <li class="feature">verschiedene Bugs</li>
-        <li class="feature">Seiten entfernt</li>
-        <ul>
-            <li class="features">beta game</li>
-            <li class="features">download page</li>
-            <li class="features">media page</li>
+            <li class="feature">Website neugeladen</li>
             <ul>
-                <li class="features">youtube page</li>
-                <li class="features">podcast page</li>
-                <li class="features">login page</li>
-                <li class="features">school page</li>
+                <li class="features">size fixed ( again )</li>
+                <li class="features">scrollbar edited ( again )</li>
+                <li class="features">audio page</li>
+                <li class="features">main page</li>
             </ul>
         </ul>
-    </ul>
+        <added>Added</added>
+        <ul>
+            <li class="feature">Seiten hinzugefügt</li>
+            <ul>
+                <li class="features">game ( tetris )</li>
+                <li class="features">test pages [ IMPROVED ]</li>
+            </ul>
+        </ul>
+        <removed>Removed</removed>
+        <ul>
+            <li class="feature">some bugs</li>
+            <li class="feature">Seiten entfernt</li>
+            <ul>
+                <li class="features">old changelog</li>
+                <li class="features">old audio</li>
+            </ul>
+        </ul>
+    </update>
+    <update>
+        <h2 class="updatedate">[1.0.0] - 11.10.2021</h2>
+        <h3 class="updatename">NewState Update</h3>
+        <edited>Edited</edited>
+        <ul>
+            <li class="feature">Website neugeladen</li>
+            <ul>
+                <li class="features">color lime ~ aqua</li>
+                <li class="features">size fixed</li>
+                <li class="features">scrollbar edited</li>
+                <li class="features">darkmode</li>
+            </ul>
+        </ul>
+        <added>Added</added>
+        <ul>
+            <li class="feature">Seiten hinzugefügt</li>
+            <ul>
+                <li class="features">mainsite</li>
+                <li class="features">404 page</li>
+                <li class="features">help page</li>
+                <li class="features">audio page</li>
+                <li class="features">website page</li>
+                <li class="features">game page</li>
+                <li class="features">test pages(credits etc.)</li>
+            </ul>
+        </ul>
+        <removed>Removed</removed>
+        <ul>
+            <li class="feature">verschiedene Bugs</li>
+            <li class="feature">Seiten entfernt</li>
+            <ul>
+                <li class="features">beta game</li>
+                <li class="features">download page</li>
+                <li class="features">media page</li>
+                <ul>
+                    <li class="features2">youtube page</li>
+                    <li class="features2">podcast page</li>
+                    <li class="features2">login page</li>
+                    <li class="features2">school page</li>
+                </ul>
+            </ul>
+        </ul>
+    </update>
 
 
 </body>
