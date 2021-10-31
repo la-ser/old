@@ -32,6 +32,31 @@
         position: sticky;
         top: 0;
       }
+
+      @media (max-width: 1080px) {
+        body {
+          display: flex;
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .alert {
+          display: none;
+        }
+        div.sticky {
+          font-size: xx-small;
+          text-transform:uppercase;
+          text-align: center;
+          padding: 5px;
+        }
+        footer {
+          display: none;
+        }
+        .button2 {
+          display: none;
+        }
+        .button1 {
+          padding: 10px 30px;
+        }
+      }
     </style>
 
     <!--<meta http-equiv="refresh" content="1; URL=https://la-ser.github.io/websites/error">-->
@@ -77,10 +102,13 @@
             <button class="button button1" formaction="https://la-ser.github.io/websites">Websites</button>
           </form>
           <form>
+            <button class="button button1" formaction="https://la-ser.github.io/audio">Audios</button>
+          </form>
+          <form>
             <button class="button button2" formaction="https://la-ser.github.io/wartung">WARTUNG</button>
           </form>
           <form>
-            <button class="button button1" formaction="https://la-ser.github.io/blocked">Apps</button>
+            <button class="button button2" formaction="https://la-ser.github.io/blocked">Apps</button>
           </form>
           <form>
             <button class="button button1" formaction="https://la-ser.github.io/help">Help</button>
