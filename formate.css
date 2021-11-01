@@ -188,3 +188,9 @@ alert2{
   border-radius: 20px;
   text-align: center;
 }
+
+@media (max-width: 1080px) {
+  .button:hover {
+    transform: scale(1.0);
+  }
+}
