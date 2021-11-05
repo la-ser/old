@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="formate.css">
+    <link rel="icon" href="./L.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>laser Inc. - worker: %index%</title>
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            text-align: center;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #333;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            zoom: 2.2;
+            overflow: hidden;
+        }
+
+        ul {
+            list-style-type: none;
+            margin-top: -13cm;
+        }
+
+        li {
+            right: -0.4cm;
+            font-size: 25px;
+            width: 9em;
+            height: 2em;
+            color: rgb(255, 166, 0);
+            border-left: 0.08em solid;
+            position: relative;
+            margin-top: 0.8em;
+            cursor: pointer;
+        }
+
+        li:hover {
+            color: rgb(255, 184, 53);
+        }
+
+        li::before,
+        li::after {
+            content: '';
+            position: absolute;
+            width: inherit;
+            border-left: inherit;
+            z-index: -1;
+        }
+
+        li::before {
+            height: 80%;
+            top: 10%;
+            left: calc(-0.15em - 0.08em * 2);
+            filter: brightness(0.8);
+        }
+
+        li::after {
+            height: 60%;
+            top: 20%;
+            left: calc(-0.15em * 2 - 0.08em * 3);
+            filter: brightness(0.6);
+        }
+
+        li span {
+            position: relative;
+            height: 120%;
+            top: -10%;
+            box-sizing: border-box;
+            border: 0.08em solid;
+            background-color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: sans-serif;
+            text-transform: capitalize;
+            font-variant: small-caps;
+            transform: translateX(calc(-0.15em * 3 - 0.08em * 2));
+            transition: 0.3s;
+        }
+
+        li:hover span {
+            transform: translateX(0.15em);
+        }
+
+        .headtext {
+            color: rgb(141, 141, 141);
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-transform: uppercase;
+            zoom: 2;
+        }
+
+        .headtext:hover {
+            color: rgb(102, 101, 101);
+            text-decoration: underline;
+        }
+
+        .suggest {
+            font-variant: small-caps;
+            text-decoration: none;
+            background-color: red;
+            border-radius: 4px;
+            color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <a class="suggest" href="https://la-ser.github.io/games/tetris">!! NEW TETRIS GAME !!</a>
+        <br>
+        <a class="headtext">Choose Site</a>
+        <a style="text-decoration: none;" href="https://la-ser.github.io/mainsite">
+            <li><span>mainsite</span></li>
+        </a>
+        <a style="text-decoration: none;" href="https://la-ser.github.io/websites">
+            <li><span>websites</span></li>
+        </a>
+        <a style="text-decoration: none;" href="https://la-ser.github.io/versions">
+            <li><span>version</span></li>
+        </a>
+        <a style="text-decoration: none;" href="https://la-ser.github.io/audio">
+            <li><span>audios</span></li>
+        </a>
+    </ul>
+</body>
+
+</html>
