@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <title>laser Inc.</title>
 </head>
-<zoom>
+
   <hidetext>
     <!--Styles / buttons-->
     <style>
@@ -61,6 +61,122 @@
           padding: 10px 30px;
         }
       }
+
+      /*NAVBAR*/
+      ul.navbar {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: rgb(49, 112, 117);
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        font-size: 25px;
+        border-radius: 10px;
+      }
+
+      li.navbar a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      .home {
+        background-color: rgb(12, 161, 161);
+        float: left;
+      }
+
+      .home:hover {
+        background-color: rgb(11, 119, 119);
+      }
+
+      .help {
+        background-color: rgb(49, 112, 117);
+        float: left;
+      }
+
+      .help:hover {
+        background-color: rgb(35, 78, 82);
+      }
+
+      .more {
+        background-color: rgb(12, 161, 161);
+        float: left;
+      }
+
+      .more:hover {
+        background-color: rgb(11, 119, 119);
+      }
+
+      .about {
+        background-color: rgb(12, 161, 161);
+        float: right;
+      }
+
+      .about:hover {
+        background-color: rgb(11, 119, 119);
+      }
+
+      @media (max-width: 1080px) {
+        ul.navbar {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: rgb(49, 112, 117);
+          position: -webkit-sticky;
+          position: sticky;
+          top: 0;
+          font-size: 20px;
+        }
+
+        li.navbar a.home a.help a.more a.about {
+          display: block;
+          color: rgb(255, 255, 255);
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+
+        .home {
+          background-color: rgb(12, 161, 161);
+          float: left;
+        }
+
+        .home:hover {
+          background-color: rgb(11, 119, 119);
+        }
+
+        .help {
+          background-color: rgb(49, 112, 117);
+          float: left;
+        }
+
+        .help:hover {
+          background-color: rgb(35, 78, 82);
+        }
+
+        .more {
+          background-color: rgb(12, 161, 161);
+          float: left;
+        }
+
+        .more:hover {
+          background-color: rgb(11, 119, 119);
+        }
+
+        .about {
+          background-color: rgb(12, 161, 161);
+          float: right;
+        }
+
+        .about:hover {
+          background-color: rgb(11, 119, 119);
+        }
+      }
     </style>
 
     <!--<meta http-equiv="refresh" content="1; URL=https://la-ser.github.io/websites/error">-->
@@ -68,7 +184,15 @@
     <!--Main text / buttons / links-->
 
     <body>
+      <ul class="navbar">
+        <li class="navbar"><a class="home" href="https://la-ser.github.io">Home</a></li>
+        <li class="navbar"><a class="help" href="https://la-ser.github.io/help">Help</a></li>
+        <li class="navbar"><a class="more" href="">More</a></li>
+        <li class="navbar"><a class="about" href="#about">About</a></li>
+      </ul>
+      <zoom>
       <header>
+        
         <h2>
           <maintext>
             laser Inc. - Hosting Website
@@ -82,8 +206,10 @@
           </div>
         </h2>
       </header>
-      <div class="sticky">!! Wartungsarbeiten werden vorgenommen !!</div>
-      <br>
+      
+      <!--<div class="sticky">!! Wartungsarbeiten werden vorgenommen !!</div>
+      <br>-->
+
       <!--<div class="flip-box">
         <div class="flip-box-inner">
           <div class="flip-box-front">
