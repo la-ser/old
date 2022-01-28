@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../formate.css">
+    <link rel="icon" href="../../icons/L.ico" type="image/x-icon">
+    <title>select - laser Inc.</title>
+</head>
+<script>
+    function showSelectedForm() {
+        var selected_form = document.querySelector('select').value
+        var forms = document.querySelectorAll('form')
+        for (var i = 0; i < forms.length; i++) {
+            if (forms[i].getAttribute('name') == selected_form)
+                forms[i].style.display = 'block'
+            else
+                forms[i].style.display = 'none'
+        }
+    }
+</script>
+<style>
+    body {
+        background-color: #0d6366;
+    }
+
+    form {
+        margin-top: 25px;
+        display: none;
+    }
+
+    form label {
+        display: block;
+    }
+
+    select {
+        margin-top: 20%;
+        color: rgb(6, 173, 173);
+        background-color: rgb(26, 141, 150);
+        border-color: rgb(0, 156, 156);
+        zoom: 3;
+    }
+
+    .submit {
+        color: rgb(4, 172, 172);
+        background-color: rgb(58, 189, 199);
+        border-color: rgb(6, 153, 153);
+        border-width: 1px;
+        zoom: 3;
+    }
+</style>
+
+<body>
+    <!--HEADER-->
+    <iframe src="../../headline" height="70px" width="100%" style="border: none; position: sticky; top: 0; background-color: #0d6366; user-select: none;"></iframe>
+    <!--HEADER-->
+    <select class="select" onchange="showSelectedForm()">
+        <option disabled selected>Select Mode</option>
+        <option value="pong_sp">Singleplayer</option>
+        <option value="pong_mp">Multiplayer</option>
+        <!--<option value="/">-/-</option>-->
+    </select>
+    <form name="pong_sp" action="./pong_sp">
+        <input type="submit" value="Play alone" class="submit">
+    </form>
+    <form name="pong_mp" action="./pong_mp">
+        <input type="submit" value="Play together" class="submit">
+    </form>
+</body>
+
+</html>

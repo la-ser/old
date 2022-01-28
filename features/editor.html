@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <style>
+        body {
+            background-color: rgb(32, 83, 83);
+        }
+
+        header {
+            font-size: 800%;
+            text-align: center;
+            margin-top: 7%;
+            color: darkcyan;
+            font-family: 'Brush Script MT', cursive;
+            font-variant: small-caps;
+            user-select: none;
+        }
+
+        .textarea {
+            width: 35%;
+            min-width: 15%;
+            max-width: 50%;
+            background-color: rgb(35, 99, 99);
+            font-size: 200%;
+            color: rgb(44, 196, 196);
+        }
+        .download {
+            margin-top: 5px;
+            background-color: rgb(35, 99, 99);
+            zoom: 2;
+            color: rgb(128, 128, 128);
+        }
+    </style>
+</head>
+
+<body>
+    <!--HEADER-->
+    <iframe src="../headline" height="70px" width="100%" style="border: none; position: sticky; top: 0; background-color: rgb(32, 83, 83); user-select: none;"></iframe>
+    <!--HEADER-->
+    <header>
+        laser Inc.
+    </header>
+    <main>
+        <center>
+            <textarea id="editor" lang="de" class="textarea" rows="10">Du kannst hier hinschreiben was du willst und dann dein Ergebnis als .txt file downloaden</textarea>
+            <br>
+            <input class="download" type="text" id="setName" placeholder="fileName.txt" value="fileName">
+            <button class="download" onclick=saveTextAsFile(editor.value,setName.value)>Download</button>
+        </center>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
+<script>
+function saveTextAsFile(textToWrite, fileNameToSaveAs)
+{
+
+    var textFileAsBlob = new Blob([textToWrite], {type:'text/plain'}); 
+    var downloadLink = document.createElement("a");
+    downloadLink.download = fileNameToSaveAs;
+    downloadLink.innerHTML = "Download File";
+    if (window.webkitURL != null)
+    {
+        // Chrome allows the link to be clicked
+        // without actually adding it to the DOM.
+        downloadLink.href = window.webkitURL.createObjectURL(textFileAsBlob);
+    }
+    else
+    {
+        // Firefox requires the link to be added to the DOM
+        // before it can be clicked.
+        downloadLink.href = window.URL.createObjectURL(textFileAsBlob);
+        downloadLink.onclick = destroyClickedElement;
+        downloadLink.style.display = "none";
+        document.body.appendChild(downloadLink);
+    }
+
+    downloadLink.click();
+}
+</script>

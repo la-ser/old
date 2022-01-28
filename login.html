@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>login page - laser Inc.</title>
+    <link rel="icon" href="./icons/login.ico" type="image/x-icon">
+
+    <style>
+        body {
+            margin-top: 5%;
+            background-color: grey;
+        }
+
+        .pswform {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            margin-top: 15%;
+            padding: 15px 15px 15px 15px;
+            background-color: darkgray;
+            border-radius: 7.5px;
+            font-family: monospace;
+            color: rgb(65, 68, 68);
+            font-weight: bold;
+            font-size: large;
+            zoom: 2;
+            user-select: none;
+        }
+
+        .hide {
+            display: none;
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+
+<body>
+    <iframe src="./headline" height="70px" width="100%"
+      style="border: none; position: sticky; top: 0; background-color: transparent; user-select: none; position: absolute; margin-left: -0.4%;"></iframe>
+    <iframe id="iframe" class="hide" src="https://la-ser.github.io/htmlEditor" width="99%" height="700px"></iframe>
+    <form id="pswform" class="pswform">
+        <label for="pswd">Enter your password: </label>
+        <input type="password" id="pswd">
+        <input type="button" value="Submit" onclick="checkPswd();" />
+    </form>
+
+    <script type="text/javascript">
+        function checkPswd() {
+            /*password nur tempörär lul*/
+            var confirmPassword = "test";
+            var password = document.getElementById("pswd").value;
+            if (password == confirmPassword) {
+                var elementA = document.getElementById("iframe");
+                var elementB = document.getElementById("pswform");
+                elementA.classList.toggle("hide");
+                elementB.classList.toggle("hide");
+                //window.location = "./more";
+            }
+            else {
+                alert("Passwords do not match.");
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        /*NAVBAR*/
+        ul.navbar {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgb(49, 112, 117);
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            font-size: 25px;
+            border-radius: 10px;
+        }
+
+        li.navbar a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .home {
+            background-color: rgb(12, 161, 161);
+            float: left;
+            opacity: 0.8;
+        }
+
+        .home:hover {
+            opacity: 1;
+        }
+
+        .help {
+            background-color: rgb(49, 112, 117);
+            float: left;
+            opacity: 0.8;
+        }
+
+        .help:hover {
+            opacity: 1;
+        }
+
+        .more {
+            background-color: rgb(12, 161, 161);
+            float: left;
+            opacity: 0.8;
+        }
+
+        .more:hover {
+            opacity: 1;
+        }
+
+        .about {
+            background-color: rgb(12, 161, 161);
+            float: right;
+            opacity: 0.8;
+        }
+
+        .about:hover {
+            opacity: 1;
+        }
+
+        @media (max-width: 1080px) {
+            ul.navbar {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: rgb(49, 112, 117);
+                position: -webkit-sticky;
+                position: sticky;
+                top: 0;
+                font-size: 20px;
+            }
+
+            li.navbar a.home a.help a.more a.about {
+                display: block;
+                color: rgb(255, 255, 255);
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            .home {
+                background-color: rgb(12, 161, 161);
+                float: left;
+                opacity: 0.8;
+            }
+
+            .home:hover {
+                opacity: 1;
+            }
+
+            .help {
+                background-color: rgb(49, 112, 117);
+                float: left;
+                opacity: 0.8;
+            }
+
+            .help:hover {
+                opacity: 1;
+            }
+
+            .more {
+                background-color: rgb(12, 161, 161);
+                float: left;
+                opacity: 0.8;
+            }
+
+            .more:hover {
+                opacity: 1;
+            }
+
+            .about {
+                background-color: rgb(12, 161, 161);
+                float: right;
+                opacity: 0.8;
+            }
+
+            .about:hover {
+                opacity: 1;
+            }
+        }
+
+        /*hide frame*/
+        ::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="navbar">
+        <li class="navbar"><a target="_parent" class="home" href="./home">Home</a></li>
+        <li class="navbar"><a target="_parent" class="help" href="./help">Help</a></li>
+        <li class="navbar"><a target="_parent" class="more" href="./more">More</a></li>
+        <li class="navbar"><a target="_parent" class="about" href="./#about">About</a></li>
+    </ul>
+</body>
+
+</html>
