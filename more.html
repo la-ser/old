@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="formate.css">
+    <link rel="icon" href="./icons/L.ico" type="image/x-icon">
+    <title>select - laser Inc.</title>
+</head>
+<script>
+    function showSelectedForm() {
+        var selected_form = document.querySelector('select').value
+        var forms = document.querySelectorAll('form')
+        for (var i = 0; i < forms.length; i++) {
+            if (forms[i].getAttribute('name') == selected_form)
+                forms[i].style.display = 'block'
+            else
+                forms[i].style.display = 'none'
+        }
+    }
+</script>
+<style>
+    form {
+        margin-top: 25px;
+        display: none;
+    }
+
+    form label {
+        display: block;
+    }
+
+    select {
+        margin-top: 20%;
+        color: aqua;
+        background-color: rgb(63, 209, 219);
+        border-color: rgb(0, 156, 156);
+        zoom: 3;
+    }
+
+    .submit {
+        color: rgb(4, 172, 172);
+        background-color: rgb(58, 189, 199);
+        border-color: rgb(6, 153, 153);
+        border-width: 1px;
+        zoom: 3;
+    }
+</style>
+
+<body>
+    <!--HEADER-->
+    <iframe src="./headline" height="70px" width="100%" style="border: none; position: sticky; top: 0; background-color: #0c898d; user-select: none;"></iframe>
+    <!--HEADER-->
+    <select class="select" onchange="showSelectedForm()">
+        <option disabled selected>Select Site</option>
+        <option value="codeEditor">Html Editor</option>
+        <!--<option value="/">-/-</option>-->
+    </select>
+    <form name="codeEditor" action="./htmlEditor">
+        <input type="submit" value="open Editor" class="submit">
+    </form>
+</body>
+
+</html>
