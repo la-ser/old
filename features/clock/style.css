@@ -5,12 +5,8 @@
 }
 
 body {
-    zoom: 2;
-  background: linear-gradient(
-    to right,
-    hsl(152, 62%, 41%),
-    hsl(175, 87%, 31%)
-  );
+  zoom: 2;
+  background: linear-gradient(to right, hsl(152, 62%, 41%), hsl(175, 87%, 31%));
   display: flex;
   justify-content: center;
   align-items: center;
