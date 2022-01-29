@@ -16,6 +16,7 @@ body {
   align-items: center;
   min-height: 50vh;
   overflow: hidden;
+  user-select: none;
 }
 
 .clock {
