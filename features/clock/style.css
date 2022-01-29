@@ -12,7 +12,6 @@ body {
   align-items: center;
   min-height: 50vh;
   overflow: hidden;
-  user-select: none;
 }
 
 .clock {
@@ -22,6 +21,7 @@ body {
   border-radius: 50%;
   border: 2px solid black;
   position: relative;
+  user-select: none;
 }
 
 .clock .number {
