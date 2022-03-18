@@ -1,3 +1,2 @@
-# <span style="color: red">laser Inc. - Wartung</span>
-# Website wird bald wieder verfügbar sein.
+#laser Inc - Website
 by laser Inc.
