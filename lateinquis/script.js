@@ -307,7 +307,7 @@ const questions = [
         answers: [
             { text: 'Autor', correct: false },
             { text: 'Ufer', correct: false },
-            { text: 'Führer', correct: true },
+            { text: 'Anführer', correct: true },
             { text: 'Akte', correct: false }
         ]
     },
