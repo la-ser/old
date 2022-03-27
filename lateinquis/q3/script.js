@@ -224,10 +224,10 @@ const questions = [
     {
         question: 'vires',
         answers: [
-            { text: 'Streitkräfte', correct: false },
+            { text: 'Streitkräfte', correct: true },
             { text: 'Staat', correct: false },
             { text: 'Nachkommen', correct: false },
-            { text: 'Gemeinde', correct: true }
+            { text: 'Gemeinde', correct: false }
         ]
     },
     
