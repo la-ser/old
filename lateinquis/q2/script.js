@@ -176,5 +176,59 @@ const questions = [
             { text: 'ebenso', correct: true }
         ]
     },
+    {
+        question: 'sponte mea',
+        answers: [
+            { text: 'von selbst', correct: true },
+            { text: 'also', correct: false },
+            { text: 'freiwillig', correct: true },
+            { text: 'verraten', correct: false }
+        ]
+    },
+    {
+        question: 'civitas',
+        answers: [
+            { text: 'Menge', correct: false },
+            { text: 'Streitkräfte', correct: false },
+            { text: 'Gewalt', correct: false },
+            { text: 'Staat', correct: true }
+        ]
+    },
+    {
+        question: 'posteri',
+        answers: [
+            { text: 'Bürgerrecht', correct: false },
+            { text: 'Geist', correct: false },
+            { text: 'Nachkommen', correct: true },
+            { text: 'Kräfte', correct: false }
+        ]
+    },
+    {
+        question: 'praestare',
+        answers: [
+            { text: 'auslöschen', correct: false },
+            { text: 'leisten', correct: true },
+            { text: 'verraten', correct: false },
+            { text: 'ermatten', correct: false }
+        ]
+    },
+    {
+        question: 'vis',
+        answers: [
+            { text: 'Meinung', correct: false },
+            { text: 'Tribun', correct: false },
+            { text: 'Gewalt', correct: true },
+            { text: 'gleichfalls', correct: false }
+        ]
+    },
+    {
+        question: 'vires',
+        answers: [
+            { text: 'Streitkräfte', correct: false },
+            { text: 'Staat', correct: false },
+            { text: 'Nachkommen', correct: false },
+            { text: 'Gemeinde', correct: true }
+        ]
+    },
     
 ]
