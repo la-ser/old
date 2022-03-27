@@ -131,5 +131,50 @@ const questions = [
             { text: 'verraten', correct: false }
         ]
     },
+    {
+        question: 'prohibere, ne',
+        answers: [
+            { text: 'daran hinder, dass', correct: true },
+            { text: 'auslöschen', correct: false },
+            { text: 'häufig', correct: false },
+            { text: 'vernichten', correct: false }
+        ]
+    },
+    {
+        question: 'exstinguere',
+        answers: [
+            { text: 'ausruhen', correct: false },
+            { text: 'zahlreich', correct: false },
+            { text: 'auslöschen', correct: true },
+            { text: 'ebenso', correct: false }
+        ]
+    },
+    {
+        question: 'quamvis',
+        answers: [
+            { text: 'auslöschen', correct: false },
+            { text: 'verraten', correct: false },
+            { text: 'also', correct: false },
+            { text: 'wenn auch', correct: true }
+        ]
+    },
+    {
+        question: 'creber',
+        answers: [
+            { text: 'also', correct: false },
+            { text: 'abnehmen', correct: false },
+            { text: 'häufig', correct: true },
+            { text: 'gleichfalls', correct: false }
+        ]
+    },
+    {
+        question: 'item',
+        answers: [
+            { text: 'Tribun', correct: false },
+            { text: 'also', correct: false },
+            { text: 'daher', correct: false },
+            { text: 'ebenso', correct: true }
+        ]
+    },
     
 ]
