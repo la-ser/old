@@ -59,6 +59,7 @@ function selectAnswer(e) {
     } else {
         startButton.innerText = 'Click to Restart Quiz'
         startButton.classList.remove('hide')
+        startButton.classLisg.add('end')
     }
 }
 
