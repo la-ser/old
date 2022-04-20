@@ -69,3 +69,11 @@ button {
     max-height: 210px;
     min-height: 70px;
 }
+
+@media (max-width: 1000px) {
+
+    body {
+        background-color: gray;
+    }
+
+}
