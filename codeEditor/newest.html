@@ -13,6 +13,29 @@
     ::-webkit-scrollbar {
         display: none;
     }
+    
+    /* TOAST */
+    #snackbar {
+        visibility: hidden;
+        min-width: 250px;
+        margin-left: -125px;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        border-radius: 2px;
+        padding: 16px;
+        position: fixed;
+        z-index: 1;
+        left: 50%;
+        bottom: 30px;
+        font-size: 17px;
+    }
+
+    #snackbar.show {
+        visibility: visible;
+        -webkit-animation: fadein 1s, fadeout 1s 2.5s;
+        animation: fadein 1s, fadeout 1s 2.5s;
+    }
 </style>
 
 <body style="background-color: gray;" onload="toast()">
