@@ -8,13 +8,22 @@
     <link rel="icon" href="https://la-ser.github.io/code/files/icons/edit.ico" type="image/x-icon">
 </head>
 
-<body style="background-color: gray;">
-    
-    <iframe src="https://la-ser.github.io/code/programs/htmlEditor_v3" height="100%" width="100%"></iframe>
-</body>
 <style>
     /*hide frame*/
     ::-webkit-scrollbar {
         display: none;
     }
 </style>
+
+<body style="background-color: gray;">
+    
+    <iframe src="https://la-ser.github.io/code/programs/htmlEditor_v3" height="100%" width="100%"></iframe>
+    <div id="snackbar">Download new htmlEditor desktop app <a style="color: red;" href="https://la-ser.github.io/editor">Click</a></div>
+</body>
+<script>
+    function toast() {
+        var x = document.getElementById("snackbar");
+        x.className = "show";
+        setTimeout(function () { x.className = x.className.replace("show", ""); }, 10000);
+    }
+</script>
